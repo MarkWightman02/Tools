@@ -1,0 +1,1 @@
+Recursively enters folders down the tree, takes all files from said folders, and moves it to one large folder.
