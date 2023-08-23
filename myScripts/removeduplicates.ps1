@@ -4,6 +4,9 @@ $directoryPath = "C:\"
 # Get all photos, change file type as needed
 $imageFiles = Get-ChildItem -Path $directoryPath -File | Where-Object { $_.Extension -match '\.(jpg|jpeg|png|gif)$' }
 
+# If you want it to be recursive, comment the line above and uncomment the next line
+#$imageFiles = Get-ChildItem -Path $directoryPath -File -Recurse| Where-Object { $_.Extension -match '\.(jpg|jpeg|png|gif)$' }
+
 # Create a hashtable to keep track of seen file hashes
 $hashTable = @{}
 
